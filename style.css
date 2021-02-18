@@ -1,0 +1,68 @@
+body {
+	margin: 0px;
+}
+
+/*header*/
+
+header {
+	height: 60px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	box-shadow: -1px 5px 10px -5px rgb(80, 80, 80);
+}
+h1 {
+	margin: 0px;
+}
+img#logo {
+	width: 50%;
+}
+
+/*Location*/
+
+section#location {
+	display: flex;
+	flex-direction: column;
+}
+div#adress {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(234, 234, 234);
+	height: 60px;
+}
+input#ville {
+	border: none;
+	background: none;
+}
+div#explore {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 290px;
+	background-color: rgb(246, 246, 246);
+}
+
+/*operation*/
+
+section#operation {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 10px;
+}
+div.ope {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f6f6f6;
+	border-radius: 20px;
+	box-shadow: 5px 2px 5px #d8d8d8;
+	margin: 0px 10px 10px 10px;
+}
+
+/*Restaurant*/
+
+section#restaurant {
+    display: flex;
+    flex-direction: column;
+}
