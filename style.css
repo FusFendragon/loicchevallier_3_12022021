@@ -29,17 +29,15 @@ p {
 /*header*/
 
 header {
-	height: 60px;
+	height: 65px;
 	display: flex;
-	text-align: center;
-	align-items: center;
-	box-shadow: -1px 5px 10px -5px rgb(80, 80, 80);
+    justify-content: center;
 }
 h1 {
-	margin: 0px;
+	margin: 23px 0px 0px 0px;
 }
 img#logo {
-	width: 50%;
+	width: 165px;
 }
 
 /*Location*/
@@ -54,18 +52,64 @@ div#adress {
 	align-items: center;
 	background-color: rgb(234, 234, 234);
 	height: 60px;
+    box-shadow: 0px 3px 3px rgb(209, 209, 209) inset
 }
+
 input#ville {
 	border: none;
 	background: none;
+    margin-left: 20px;
+    padding: 0px;
+    width: 130px;
+    font-size: 15px;
 }
 div#explore {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	height: 290px;
+
 	background-color: rgb(246, 246, 246);
 }
+div#explore h2 {
+    width: 60%;
+    align-self: center;
+    margin: 45px 0px 15px 0px;
+    font-size: 1.3em;
+    font-weight: 1000;
+}
+div#explore h3 {
+    width: 85%;
+    align-self: center;
+    font-family: 'roboto-thin';
+    margin: 0px;
+    font-size: 1.05em;
+    color: #646464;
+    font-weight: 600;
+}
+#explore button {
+    align-self: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1em;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px;
+    background-color: #9356DC;
+    box-sizing: border-box;
+    box-shadow: 15px 20px 35px inset #ff79DA;
+    margin: 30px 0px 60px 0px;
+}
+button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #d8d8d8;
+}
+
 
 /*operation*/
 
@@ -98,7 +142,7 @@ div.rest {
 	border-radius: 15px;
 	background-color: #ffffff;
 	margin-bottom: 20px;
-	box-shadow: 5px 2px 5px #d8d8d8;
+	box-shadow: 5px 5px 5px #d8d8d8;
 }
 div.rest img {
 	height: 175px;
