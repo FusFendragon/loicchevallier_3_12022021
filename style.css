@@ -81,3 +81,11 @@ div.rest img {
 	border-radius: 15px 15px 0px 0px;
 	object-fit: cover;
 }
+
+/*Footer*/
+
+footer {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+    padding: 15px 0px 0px 20px;
+}
