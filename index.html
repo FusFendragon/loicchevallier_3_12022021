@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/f9ccfde1c2.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood</title>
-</head>
-<body>
-    <header>
-        <h1><a href="index.html"><img src="images/ohmyfood.png" alt="ohmyfood" id="logo"></a></h1>
-    </header>
-    <section id="location">
-        <div id="adress">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" name="ville" id="ville" value="Paris, Belleville" required />
-        </div>
-        <div id="explore">
-            <h2>Réservez le menu qui vous convient</h2>
-            <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
-            <button type="submit">
-                <span>Explorer nos restaurants</span>
-            </button>
-        </div>
-    </section>
-    <section id="operation">
-        <h2>Fonctionnement</h2>
-        <a href="#restaurant" class="ope">
-            <span class="num-op">1</span>
-            <i class="fas fa-mobile-alt"></i>
-            <h3>Choisissez un restaurant</h3>
-        </a>
-        <a href="#restaurant" class="ope">
-            <span class="num-op">2</span>
-            <i class="fas fa-list-ul"></i>
-            <h3>Composez votre menu</h3>
-        </a>
-        <a href="#restaurant" class="ope">
-            <span class="num-op">3</span>
-            <i class="fas fa-store"></i>
-            <h3>Dégustez au restaurant</h3>
-        </a>
-    </section>
-    <section id="restaurant">
-        <h2>Restaurants</h2>
-        <div class="rest">
-            <img src="images\palette.jpg" alt="La palette du goût">
-            <h3>La palette du goût</h3>
-            <h4>Ménilmontant</h4>
-            <i class="far fa-heart"></i>
-            <i class="fas fa-heart"></i>
-        </div>
-        <div class="rest">
-            <img src="images\enchantee.jpg" alt="La note enchantée">
-            <h3>La note enchantée</h3>
-            <h4>Charonne</h4>
-            <i class="far fa-heart"></i>
-        </div>
-        <div class="rest">
-            <img src="images\francaise.jpg" alt="À la française">
-            <h3>À la française</h3>
-            <h4>Cité Rouge</h4>
-            <i class="far fa-heart"></i>
-        </div>
-        <div class="rest">
-            <img src="images\delice.jpg" alt="images\delice.jpg">
-            <h3>Le délice des sens</h3>
-            <h4>Folie-Méricourt</h4>
-            <i class="far fa-heart"></i>
-        </div>
-    </section>
-    <footer>
-        <h2>ohmyfood</h2>
-        <h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
-        <h3><i class="fas fa-hands-helping"></i>Devenir partenaire</h3>
-        <h3>Mentions légales</h3>
-        <h3>Contact</h3>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://kit.fontawesome.com/f9ccfde1c2.js" crossorigin="anonymous"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ohmyfood</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html"><img src="images/ohmyfood.png" alt="ohmyfood" id="logo" /></a>
+			</h1>
+		</header>
+		<section id="location">
+			<div id="adress">
+				<i class="fas fa-map-marker-alt"></i>
+				<input type="text" name="ville" id="ville" value="Paris, Belleville" required />
+			</div>
+			<div id="explore">
+				<h2>Réservez le menu qui vous convient</h2>
+				<h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+				<button type="submit">
+					<span>Explorer nos restaurants</span>
+				</button>
+			</div>
+		</section>
+		<section id="operation">
+			<h2>Fonctionnement</h2>
+			<a href="#restaurant" class="ope">
+				<span class="num-op">1</span>
+				<i class="fas fa-mobile-alt"></i>
+				<h3>Choisissez un restaurant</h3>
+			</a>
+			<a href="#restaurant" class="ope">
+				<span class="num-op">2</span>
+				<i class="fas fa-list-ul"></i>
+				<h3>Composez votre menu</h3>
+			</a>
+			<a href="#restaurant" class="ope">
+				<span class="num-op">3</span>
+				<i class="fas fa-store"></i>
+				<h3>Dégustez au restaurant</h3>
+			</a>
+		</section>
+		<section id="restaurant">
+			<h2>Restaurants</h2>
+			<a href="index.html" class="rest">
+				<img src="images\palette.jpg" alt="La palette du goût" />
+				<div>
+					<h3>La palette du goût</h3>
+					<h4>Ménilmontant</h4>
+					<button type="button"><i class="far fa-heart"></i></button>
+					<button type="button"><i class="fas fa-heart"></i></button>
+				</div>
+			</a>
+			<a href="index.html" class="rest">
+				<img src="images\enchantee.jpg" alt="La note enchantée" />
+				<div>
+					<h3>La note enchantée</h3>
+					<h4>Charonne</h4>
+					<button type="button"><i class="far fa-heart"></i></button>
+					<button type="button"><i class="fas fa-heart"></i></button>
+				</div>
+			</a>
+			<a href="index.html" class="rest">
+				<img src="images\francaise.jpg" alt="À la française" />
+				<div>
+					<h3>À la française</h3>
+					<h4>Cité Rouge</h4>
+					<button type="button"><i class="far fa-heart"></i></button>
+					<button type="button"><i class="fas fa-heart"></i></button>
+				</div>
+			</a>
+			<a href="index.html" class="rest">
+				<img src="images\delice.jpg" alt="images\delice.jpg" />
+				<div>
+					<h3>Le délice des sens</h3>
+					<h4>Folie-Méricourt</h4>
+					<button type="button"><i class="far fa-heart"></i></button>
+					<button type="button"><i class="fas fa-heart"></i></button>
+				</div>
+			</a>
+		</section>
+		<footer>
+			<h2>ohmyfood</h2>
+			<h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
+			<h3><i class="fas fa-hands-helping"></i>Devenir partenaire</h3>
+			<h3>Mentions légales</h3>
+			<h3>Contact</h3>
+		</footer>
+	</body>
 </html>
