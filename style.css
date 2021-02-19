@@ -221,6 +221,21 @@ a.rest button:active .fas {
 
 /*menu*/
 
+header a#return  {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 65px;
+	height: 65px;
+}
+header a#return i {
+	position: absolute;
+	left: 23px;
+	top: 29px;
+	font-size: 1.5em;
+	color : black;
+}
+
 .restaurant-page {
 	display: flex;
 	flex-direction: column;
