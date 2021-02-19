@@ -286,7 +286,7 @@ header a#return i {
 }
 .menu .food {
 	display: grid;
-	grid-template-columns: auto 45px ;
+	grid-template-columns: auto 80px ;
 	background-color: white;
 	justify-content: space-between;
 	box-shadow: 1px 2px 15px #c9c9c9;
@@ -299,7 +299,6 @@ header a#return i {
 .food h4 {
 	font-size: 1.05em;
 	margin: 15px 0px 0px 0px;
-	max-width: 255px;
 }
 .food h5 {
 	grid-column: 1;
@@ -312,6 +311,7 @@ header a#return i {
 	margin: 0px;
 	font-size: 0.9em;
 	font-weight: 800;
+	text-align: center;
 }
 .food i {
 	width: 60px;
