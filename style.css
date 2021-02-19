@@ -292,12 +292,14 @@ header a#return i {
 	box-shadow: 1px 2px 15px #c9c9c9;
 	margin: 0px 0px 20px 0px;
 	border-radius: 20px;
-	height: 70px;
+	min-height: 70px;
 	padding-left: 10px;
 	text-overflow: ellipsis;
 }
 .food h4 {
+	font-size: 1.05em;
 	margin: 15px 0px 0px 0px;
+	max-width: 255px;
 }
 .food h5 {
 	grid-column: 1;
