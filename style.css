@@ -100,14 +100,14 @@ div#explore h3 {
 	box-shadow: 15px 20px 35px inset #ff79da;
 	margin: 30px 0px 60px 0px;
 }
-button span {
+#explore button span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 220px;
 	height: 50px;
 	border-radius: 50px;
-	box-shadow: 1px 2px 15px #dddddd;
+	box-shadow: 1px 2px 15px #c9c9c9;
 }
 
 /*operation*/
@@ -219,6 +219,120 @@ a.rest button:active .fas {
 	display: inline;
 }
 
+/*menu*/
+
+.restaurant-page {
+	display: flex;
+	flex-direction: column;
+}
+.img-menu {
+	width: 100%;
+}
+.menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	top: -50px;
+	background-color: #f6f6f6;
+	border-radius: 50px 60px 0px 0px;
+	padding-left: 15px;
+}
+.rest-tittle {
+	display: grid;
+	grid-template-columns: 265px 70px;
+	margin-top: 35px;
+}
+.rest-tittle h2 {
+	font-family: 'shrikhand';
+	font-size: 1.7em;
+	font-weight: 500;
+	margin: 0px;
+}
+.rest-tittle button {
+	background: none;
+	border: none;
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	font-size: 1.7em;
+}
+.rest-tittle button .fas {
+	display: none;
+	color: #9356dc;
+	border-radius: 50px;
+}
+.rest-tittle button:active .fas {
+	display: inline;
+}
+.underl {
+	text-decoration: underline;
+	text-decoration-color: #99E2D0;
+	text-underline-position: left under;
+	text-decoration-thickness: 3px;
+}
+.menu .food {
+	display: grid;
+	grid-template-columns: auto 45px ;
+	background-color: white;
+	justify-content: space-between;
+	box-shadow: 1px 2px 15px #c9c9c9;
+	margin: 0px 15px 20px 15px;
+	border-radius: 20px;
+	height: 70px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+}
+.food h4 {
+	margin: 15px 0px 0px 0px;
+}
+.food h5 {
+	grid-column: 1;
+	margin: 0px 0px 10px;
+	font-size: 0.9em;
+	font-family: 'roboto-thin';
+}
+.food p {
+	grid-column: 2;
+	margin: 0px;
+	font-size: 0.9em;
+	font-weight: 800;
+}
+.food i {
+	width: 60px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3;
+	grid-row: 1 / span 2;
+	background-color: #99E2D0;
+	color: white;
+	font-size: 1.3em;
+	border-radius: 0px 20px 20px 0px;
+
+}
+.menu button.command {
+	align-self: center;
+	width: 220px;
+	height: 50px;
+	border-radius: 50px;
+	font-size: 1em;
+	color: #ffffff;
+	border: none;
+	padding: 0px;
+	background-color: #9356dc;
+	box-sizing: border-box;
+	box-shadow: 15px 20px 35px inset #ff79da;
+	margin: 30px 0px 60px 0px;
+}
+.menu button.command span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 50px;
+	border-radius: 50px;
+	box-shadow: 1px 2px 15px #c9c9c9;
+}
+
 /*Footer*/
 
 footer {
@@ -230,7 +344,7 @@ footer h2 {
 	font-family: "shrikhand";
 	font-size: 1.2em;
 	margin: 0px 0px 25px 0px;
-    font-weight: 500;
+	font-weight: 500;
 }
 footer h3 {
 	margin: 0px 0px 15px 0px;
