@@ -344,19 +344,10 @@ header a#return i {
 	color: #ffffff;
 	border: none;
 	padding: 0px;
-	background-color: #9356dc;
+	background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 	box-sizing: border-box;
-	box-shadow: 15px 20px 35px inset #ff79da;
 	margin: 30px 0px 60px 0px;
-}
-.menu button.command span {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 220px;
-	height: 50px;
-	border-radius: 50px;
-	box-shadow: 1px 2px 15px #c9c9c9;
+	box-shadow: 1px 3px 15px #c9c9c9;
 }
 
 /*Footer*/
