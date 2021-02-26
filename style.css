@@ -100,6 +100,10 @@ div#explore h3 {
 	margin: 30px 0px 60px 0px;
 	box-shadow: 1px 3px 15px #c9c9c9;
 }
+#explore button:hover,
+#explore button:active {
+	box-shadow: 1px 3px 15px #b6b6b6;
+}
 
 /*operation*/
 
@@ -171,6 +175,10 @@ a.rest {
 	box-shadow: 1px 2px 15px #dddddd;
 	color: black;
 	text-decoration: none;
+}
+a.rest:hover,
+a.rest:active {
+	box-shadow: 1px 3px 15px #cfcfcf;
 }
 .rest img {
 	height: 175px;
@@ -280,7 +288,7 @@ header a#return i {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.rest-tittle button:active .fas, 
+.rest-tittle button:active .fas,
 .rest-tittle button:hover .fas {
 	display: inline;
 }
@@ -348,6 +356,10 @@ header a#return i {
 	box-sizing: border-box;
 	margin: 30px 0px 60px 0px;
 	box-shadow: 1px 3px 15px #c9c9c9;
+}
+.menu button.command:hover,
+.menu button.command:active {
+	box-shadow: 1px 3px 15px #b6b6b6;
 }
 
 /*Footer*/
