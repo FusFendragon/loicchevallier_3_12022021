@@ -152,7 +152,7 @@ a.ope:hover,
 a.ope:active {
 	background-color: #f5edff;
 }
-a.ope:hover,
+a.ope:hover i,
 a.ope:active i {
 	color: #9356dc;
 }
