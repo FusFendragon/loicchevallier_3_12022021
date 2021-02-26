@@ -211,7 +211,7 @@ a.rest button {
 	grid-row: 1 / span 2;
 	font-size: 1.7em;
 }
-a.rest button .fas {
+.heart .fas {
 	display: none;
 	color: #9356dc;
 	background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #9356dc);
@@ -219,12 +219,12 @@ a.rest button .fas {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-a.rest button:active .fas,
-a.rest button:hover .fas {
+.heart:active .fas,
+.heart:hover .fas {
 	display: inline;
 }
-a.rest button:active .far,
-a.rest button:hover .far {
+.heart:active .far,
+.heart:hover .far {
 	display: none;
 }
 
@@ -279,22 +279,6 @@ header a#return i {
 	grid-column: 2;
 	grid-row: 1 / span 2;
 	font-size: 1.7em;
-}
-.rest-tittle button .fas {
-	display: none;
-	color: #9356dc;
-	border-radius: 50px;
-	background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #9356dc);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.rest-tittle button:active .fas,
-.rest-tittle button:hover .fas {
-	display: inline;
-}
-.rest-tittle button:active .far,
-.rest-tittle button:hover .far {
-	display: none;
 }
 .underl {
 	text-decoration: underline;
