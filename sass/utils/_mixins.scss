@@ -1,0 +1,24 @@
+@mixin box-shadow-default ($color: $shadow-color) {
+    box-shadow: 1px 3px 15px $color;
+    &:hover {
+		box-shadow: 1px 3px 15px darken($color, 10);
+	}
+	&:active {
+		box-shadow: 1px 3px 15px darken($color, 10);
+	}  
+}
+@mixin border-padding-none {
+    border: none;
+    padding: 0px;
+}
+
+@mixin link-no-style {
+    text-decoration: none;
+	color: black;
+}
+
+@mixin flex-center {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}

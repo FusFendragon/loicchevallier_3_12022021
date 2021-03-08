@@ -1,0 +1,218 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/placehorders";
+@import "./base/base";
+@import "./page/menu";
+
+/*header*/
+
+header {
+	height: 65px;
+	@include flex-center;
+}
+h1 {
+	margin: 23px 0px 0px 0px;
+}
+#logo {
+	width: 165px;
+	@include link-no-style;
+}
+
+/*Location*/
+
+section#location {
+	display: flex;
+	flex-direction: column;
+}
+div#adress {
+	background-color: rgb(234, 234, 234);
+	height: 60px;
+	box-shadow: 0px 3px 3px rgb(209, 209, 209) inset;
+	@include flex-center;
+}
+
+input#ville {
+	background: none;
+	margin-left: 20px;
+	width: 130px;
+	font-size: 15px;
+	@include border-padding-none;
+}
+div#explore {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: $bg-alt;
+}
+div#explore h2 {
+	width: 60%;
+	align-self: center;
+	margin: 45px 0px 15px 0px;
+	font-size: 1.3em;
+	font-weight: 1000;
+}
+div#explore h3 {
+	width: 85%;
+	align-self: center;
+	font-family: "roboto-thin";
+	margin: 0px;
+	font-size: 1.05em;
+	color: #646464;
+	font-weight: 600;
+}
+.gradient-button {
+	align-self: center;
+	width: 220px;
+	height: 50px;
+	border-radius: 50px;
+	font-size: 1em;
+	color: #ffffff;
+	background-image: $bg-gradient;
+	box-sizing: border-box;
+	margin: 30px 0px 60px 0px;
+	@include box-shadow-default;
+	@include border-padding-none;
+}
+
+/*operation*/
+
+section#operation {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px;
+}
+#operation h2 {
+	margin: 50px 0px 30px 0px;
+}
+a.ope {
+	height: 70px;
+	background-color: #f6f6f6;
+	border-radius: 20px;
+	margin: 0px 0px 25px 15px;
+	@include box-shadow-default(#dddddd);
+	@include link-no-style;
+	@include flex-center;
+}
+.num-op {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 22px;
+	background-color: $primary-color;
+	color: white;
+	border-radius: 15px;
+	@include flex-center;
+}
+#operation h3 {
+	margin: 0px;
+	width: 220px;
+	font-size: 1em;
+}
+a.ope {
+	i {
+		margin-right: 25px;
+		color: #7e7e7e;
+	}
+	&:hover,
+	&:active {
+		background-color: scale-color($primary-color, $lightness: 90%);
+	}
+	&:hover i,
+	&:active i {
+		color: $primary-color;
+	}
+}
+
+/*Restaurant*/
+
+section#restaurant {
+	display: flex;
+	flex-direction: column;
+	background-color: $bg-alt;
+	padding: 0px 20px;
+}
+a.rest {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+	@include link-no-style;
+	@include box-shadow-default;
+}
+.rest {
+	img {
+		height: 175px;
+		border-radius: 15px 15px 0px 0px;
+		object-fit: cover;
+	}
+	div {
+		display: grid;
+		grid-template-columns: auto, auto;
+		margin-left: 15px;
+	}
+	h3 {
+		width: 245px;
+		margin: 0px;
+		margin-top: 15px;
+		grid-column: 1;
+		font-size: 1.1em;
+	}
+	h4 {
+		margin: 3px 0px 20px 0px;
+		grid-column: 1;
+		font-family: "roboto-thin";
+		font-size: 1em;
+		font-weight: 600;
+	}
+	.heart {
+		grid-column: 2;
+		grid-row: 1 / span 2;
+		font-size: 1.7em;
+		@include flex-center;
+	}
+}
+.heart {
+	.fas {
+		display: none;
+		color: #9356dc;
+		background-image: $linear-gradient;
+		border-radius: 50px;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&:active .fas,
+	&:hover .fas {
+		display: inline;
+	}
+	&:active .far,
+	&:hover .far {
+		display: none;
+	}
+}
+/*Footer*/
+
+footer {
+	background-color: #353535;
+	color: rgb(255, 255, 255);
+	padding: 25px 0px 20px 25px;
+	h2 {
+		font-family: "shrikhand";
+		font-size: 1.2em;
+		margin: 0px 0px 25px 0px;
+		font-weight: 500;
+	}
+	h3 {
+		margin: 0px 0px 15px 0px;
+		font-size: 1em;
+		i {
+			margin-right: 10px;
+		}
+		&:nth-child(4),
+		&:nth-child(5) {
+			font-weight: 500;
+		}
+	}
+}
