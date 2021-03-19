@@ -56,45 +56,72 @@ header a#return i {
 	text-decoration-thickness: 3px;
 }
 .food {
-	min-height: 70px;
-	display: grid;
-	grid-template-columns: auto 80px;
-	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
 	justify-content: space-between;
+	background-color: white;
 	margin: 0px 0px 20px 0px;
 	border-radius: 20px;
 	padding-left: 10px;
-	text-overflow: ellipsis;
+	overflow: hidden;
 	@include box-shadow-default(#dddddd);
+	animation: food-anim $anim-dur-food both;
+	@for $i from 1 through $num-food {
+		&--#{$i} {
+			animation-delay: $anim-delay * $i;
+		 }
+	}
+	div {
+		width: calc(100% - 50px);
+		transition: all 0.5s;
+	}
 	h4 {
 		font-size: 1.05em;
 		margin: 15px 0px 0px 0px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 	h5 {
-		grid-column: 1;
-		margin: 0px 0px 10px;
+		margin: $margin-bot-food;
 		font-size: 0.9em;
 		font-family: "roboto-thin";
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 	p {
-		grid-column: 2;
 		margin: 0px;
+		align-self: flex-end;
+		margin: $margin-bot-food;
 		font-size: 0.9em;
-		font-weight: 800;
-		text-align: center;
+		font-weight: 800;	
 	}
-	i {
-		width: 60px;
+	.select {
+		width: 0px;
+		height: 100%;
 		@include flex-center;
-		display: none;
-		grid-column: 3;
-		grid-row: 1 / span 2;
 		background-color: $secondary-color;
 		color: white;
 		font-size: 1.3em;
 		border-radius: 0px 20px 20px 0px;
+		transition : all 0.5s;
 	}
+
 }
+.food:hover {
+	span {
+		width: 60px;
+		}
+	i {
+		animation: select-rotate 0.5s;
+	}
+	div {
+		width: calc(100% - 110px);
+	}
+
+}
+	
 .menu button.command {
 	width: 190px;
 	height: 50px;

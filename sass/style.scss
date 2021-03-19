@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./base/base";
 @import "./components/components";
 @import "./page/menu";
@@ -137,7 +138,6 @@ a.rest {
 	}
 	div {
 		display: grid;
-		grid-template-columns: auto, auto;
 		margin-left: 15px;
 	}
 	h3 {

@@ -9,3 +9,12 @@ $bg-alt: #f6f6f6;
 
 $bg-gradient: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 $linear-gradient: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #9356dc);
+
+/*Value*/
+
+$margin-bot-food:0px 0px 10px;
+
+/*Animation*/
+$num-food: 10;
+$anim-dur-food: 1000ms;
+$anim-delay: $anim-dur-food / $num-food;
