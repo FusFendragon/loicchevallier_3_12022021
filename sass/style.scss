@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./components/components";
 @import "./page/menu";
 
 /*header*/
@@ -59,19 +60,7 @@ div#explore h3 {
 	color: #646464;
 	font-weight: 600;
 }
-.gradient-button {
-	align-self: center;
-	width: 220px;
-	height: 50px;
-	border-radius: 50px;
-	font-size: 1em;
-	color: #ffffff;
-	background-image: $bg-gradient;
-	box-sizing: border-box;
-	margin: 30px 0px 60px 0px;
-	@include box-shadow-default;
-	@include border-padding-none;
-}
+
 
 /*operation*/
 
@@ -172,24 +161,7 @@ a.rest {
 		@include flex-center;
 	}
 }
-.heart {
-	.fas {
-		display: none;
-		color: #9356dc;
-		background-image: $linear-gradient;
-		border-radius: 50px;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	&:active .fas,
-	&:hover .fas {
-		display: inline;
-	}
-	&:active .far,
-	&:hover .far {
-		display: none;
-	}
-}
+
 /*Footer*/
 
 footer {
