@@ -29,6 +29,7 @@ header a#return i {
 
 /*Footer*/
 
+
 footer {
 	background-color: #353535;
 	color: rgb(255, 255, 255);
@@ -39,15 +40,24 @@ footer {
 		margin: 0px 0px 25px 0px;
 		font-weight: 500;
 	}
+    a {
+   
+    }
 	h3 {
 		margin: 0px 0px 15px 0px;
 		font-size: 1em;
 		i {
 			margin-right: 10px;
 		}
-		&:nth-child(4),
-		&:nth-child(5) {
-			font-weight: 500;
-		}
 	}
+    h4 {
+        margin: 0px 0px 15px 0px;
+        font-weight: 100;
+    }
+}
+.footer {
+    &_link {
+        @include link-no-style;
+        color: white;
+    }
 }
