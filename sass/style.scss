@@ -57,12 +57,31 @@ section#operation {
 	display: flex;
 	flex-direction: column;
 	margin: 0px 20px;
+	@media screen and (min-width:650px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+#ope_list {
+	@media screen and (min-width:650px) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 #operation h2 {
 	margin: 50px 0px 30px 0px;
+	width: 100%;
+	@media screen and (min-width:650px) {
+		text-align: center;
+		font-size: 2em;
+	}
 }
 a.ope {
 	height: 70px;
+	max-width: 700px;
 	background-color: #f6f6f6;
 	border-radius: 20px;
 	margin: 0px 0px 25px 15px;
@@ -79,6 +98,10 @@ a.ope {
 	color: white;
 	border-radius: 15px;
 	@include flex-center;
+	@media screen and (min-width: 650px) {
+		position: initial;
+	}
+	
 }
 #operation h3 {
 	margin: 0px;
@@ -87,8 +110,10 @@ a.ope {
 }
 a.ope {
 	i {
+		width: 70px;
 		margin-right: 25px;
 		color: #7e7e7e;
+		@include flex-center;
 	}
 	&:hover,
 	&:active {
@@ -105,8 +130,29 @@ a.ope {
 section#restaurant {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	background-color: $bg-alt;
 	padding: 0px 20px;
+	@media screen and (min-width: 660px) {
+		display: flex;
+		flex-direction: row;;
+		justify-content: center;
+	}
+}
+section h2 {
+	width: 100%;
+	@media screen and (min-width:660px) {
+		text-align: center;
+		font-size: 2em;
+	}
+}
+#rest_list {
+	@media screen and (min-width: 660px) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 a.rest {
 	height: 250px;
@@ -117,6 +163,10 @@ a.rest {
 	margin-bottom: 20px;
 	@include link-no-style;
 	@include box-shadow-default;
+	@media screen and (min-width: 660px) {
+		margin-right: 20px;
+		width: 40%;
+	}
 }
 .rest {
 	img {
