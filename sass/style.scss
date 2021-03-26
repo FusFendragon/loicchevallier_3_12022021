@@ -124,27 +124,28 @@ a.rest {
 		border-radius: 15px 15px 0px 0px;
 		object-fit: cover;
 	}
-	div {
-		display: grid;
+	.rest_info {
+		display: flex;
 		margin-left: 15px;
+	}
+	.text_rest {
+		display: flex;
+		flex-direction: column;
+		width: calc(100% - 50px);
 	}
 	h3 {
 		width: 245px;
 		margin: 0px;
 		margin-top: 15px;
-		grid-column: 1;
 		font-size: 1.1em;
 	}
 	h4 {
 		margin: 3px 0px 20px 0px;
-		grid-column: 1;
 		font-family: "roboto-thin";
 		font-size: 1em;
 		font-weight: 600;
 	}
 	.heart {
-		grid-column: 2;
-		grid-row: 1 / span 2;
 		font-size: 1.7em;
 		@include flex-center;
 	}
