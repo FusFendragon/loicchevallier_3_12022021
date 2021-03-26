@@ -1,12 +1,15 @@
 /*menu*/
 
-
 .restaurant-page {
 	display: flex;
 	flex-direction: column;
 }
 .img-menu {
 	width: 100%;
+	max-height: 280px;
+	object-fit: cover;
+	@media screen and (min-width: 660px) {
+	}
 }
 .menu {
 	position: relative;
@@ -21,6 +24,11 @@
 .rest-tittle {
 	display: flex;
 	margin-top: 35px;
+	@media screen and (min-width: 660px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 .rest-tittle h2 {
 	font-family: "shrikhand";
@@ -28,6 +36,10 @@
 	font-weight: 500;
 	margin: 0px;
 	width: calc(100% - 50px);
+	@media screen and (min-width: 660px) {
+		width: 100%;
+		text-align: center;
+	}
 }
 .rest-tittle .heart {
 	font-size: 1.7em;
@@ -39,7 +51,29 @@
 	text-underline-position: left under;
 	text-decoration-thickness: 3px;
 }
+.menu h3 {
+	@media screen and (min-width: 660px) {
+		text-decoration: underline;
+		text-decoration-color: $secondary-color;
+		text-underline-position: left under;
+		text-decoration-thickness: 3px;
+	}
+}
+.dish_list {
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: 660px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		h3 {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
 .food {
+	min-width: 350px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -53,9 +87,9 @@
 	@for $i from 1 through $num-food {
 		&--#{$i} {
 			animation-delay: $anim-delay * $i;
-		 }
+		}
 	}
-	div {
+	.dish {
 		width: calc(100% - 50px);
 		transition: all 0.5s;
 	}
@@ -79,7 +113,7 @@
 		align-self: flex-end;
 		margin: $margin-bot-food;
 		font-size: 0.9em;
-		font-weight: 800;	
+		font-weight: 800;
 	}
 	.select {
 		width: 0px;
@@ -89,23 +123,24 @@
 		color: white;
 		font-size: 1.3em;
 		border-radius: 0px 20px 20px 0px;
-		transition : all 0.5s;
+		transition: all 0.5s;
 	}
-
+	@media screen and (min-width: 660px) {
+		margin-right: 20px;
+	}
 }
 .food:hover {
 	span {
 		width: 60px;
-		}
+	}
 	i {
 		animation: select-rotate 0.5s;
 	}
 	div {
 		width: calc(100% - 110px);
 	}
-
 }
-	
+
 .menu button.command {
 	width: 190px;
 	height: 50px;

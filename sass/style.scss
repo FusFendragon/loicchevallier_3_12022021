@@ -76,7 +76,8 @@ section#operation {
 	width: 100%;
 	@media screen and (min-width:650px) {
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.8em;
+		font-family: 'shrikhand';
 	}
 }
 a.ope {
@@ -139,11 +140,12 @@ section#restaurant {
 		justify-content: center;
 	}
 }
-section h2 {
+#restaurant h2 {
 	width: 100%;
 	@media screen and (min-width:660px) {
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.8em;
+		font-family: 'shrikhand';
 	}
 }
 #rest_list {
