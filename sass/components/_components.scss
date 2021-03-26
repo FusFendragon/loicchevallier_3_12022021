@@ -14,7 +14,8 @@
 
 .heart {
 	.fas {
-		display: none;
+		height: 0px;
+		position: absolute;
 		color: #9356dc;
 		background-image: $linear-gradient;
 		border-radius: 50px;
@@ -23,11 +24,11 @@
 	}
 	&:active .fas,
 	&:hover .fas {
-		display: inline;
+		animation: heart-anim 200ms ease-in-out both;
 	}
 	&:active .far,
 	&:hover .far {
-		display: none;
+		opacity: 0;
 	}
 }
 
