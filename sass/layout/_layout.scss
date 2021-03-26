@@ -1,0 +1,53 @@
+/*header*/
+
+header {
+	height: 65px;
+	@include flex-center;
+}
+h1 {
+	margin: 23px 0px 0px 0px;
+}
+#logo {
+	width: 165px;
+	@include link-no-style;
+}
+
+header a#return {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 65px;
+	height: 65px;
+}
+header a#return i {
+	position: absolute;
+	left: 23px;
+	top: 29px;
+	font-size: 1.5em;
+	@include link-no-style;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #353535;
+	color: rgb(255, 255, 255);
+	padding: 25px 0px 20px 25px;
+	h2 {
+		font-family: "shrikhand";
+		font-size: 1.2em;
+		margin: 0px 0px 25px 0px;
+		font-weight: 500;
+	}
+	h3 {
+		margin: 0px 0px 15px 0px;
+		font-size: 1em;
+		i {
+			margin-right: 10px;
+		}
+		&:nth-child(4),
+		&:nth-child(5) {
+			font-weight: 500;
+		}
+	}
+}
