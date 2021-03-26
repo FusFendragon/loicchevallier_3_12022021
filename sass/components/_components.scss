@@ -36,3 +36,13 @@
 	}
 }
 
+.new_rest {
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	background-color: $secondary-color;
+	color: darken($secondary-color ,40%);
+	font-size: 0.9em;
+	@include flex-center
+	
+}
