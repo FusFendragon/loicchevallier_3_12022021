@@ -8,6 +8,7 @@ $bg-alt: #f6f6f6;
 /*Gradient Color*/
 
 $bg-gradient: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+$bg-gradient-light: linear-gradient(to right bottom, lighten(#ff79da,5%), lighten(#e86edb,5%), lighten(#cf64dc,5%), lighten(#b35cdc,5%), lighten(#9356dc,5%));
 $linear-gradient: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #9356dc);
 
 /*Value*/
