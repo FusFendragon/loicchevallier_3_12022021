@@ -24,6 +24,7 @@
 		background-image: $linear-gradient;
 		border-radius: 50px;
 		background-clip: text;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 	&:active .fas,
